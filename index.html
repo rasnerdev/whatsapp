@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Whatsapp</title>
-</head>
-<body>
-    <form action="#" method="POST">
-        <h1>Enviar mensaje por Whatsapp</h1>
-        <input type="number" name="telefono" placeholder="Número de móvil" autofocus>
-        <textarea name="mensaje" placeholder="Escribe aquí tu mensaje..." required></textarea>
-        <label><input type="checkbox"> Elegir destinatario en Whatsapp</label>
-        <button>ENVIAR  <i class="fab fa-whatsapp"></i></button>
-        <div class="footer"><a href="https://github.com/rasnerdev">Github <i class="fab fa-github"></i></a></div>
-    
-    </form>
-    <script src="./js/functions.js"></script>    
-    
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+        <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Whatsapp</title>
+    </head>
+    <body>
+        <h1>Envío de mensajes de WhatsApp con HTML</h1>
+        <div class="whatsapp">
+           <div class="header">
+                <div class="back">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+                <div class="imagen">
+                    <img src="./img/avatar.png"> 
+                </div>
+                <div class="info">
+                    <div class="tlf"><input type="text" name="telefono" value="RasnerDev"></div>
+                    <div class="estado">en línea</div>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-phone-alt"></i>
+                    <i class="fas fa-paperclip"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <div class="conver">
+                <div class="converMessage">
+                    ¡Cambia el número de teléfono por el número al que quieras enviar el mensaje! Si no lo haces, tendrás que elegir un contacto de tu agenda 😉
+                </div>
+                <div class="converMessageUser">
+                    
+                </div>
+                <div class="message">
+                    <textarea autofocus placeholder="Escribe un mensaje"></textarea>
+                    <img class="enviar" src="./img/send.png" alt="">
+                </div>
+            </div>
+        </div>
+        <script src="./js/functions.js"></script>
+        <footer>Más proyectos en <a target="_blank" title="RasnerDev en Github!" href="https://github.com/rasnerdev">Github <i class="fab fa-github"></i></a></footer>
+    </body>
 </html>
